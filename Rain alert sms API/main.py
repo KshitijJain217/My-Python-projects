@@ -2,13 +2,13 @@
 import requests
 from twilio.rest import Client
 
-account_sid = "AC13805995b3448b867c87e52c355e8e26"
-auth_token = "9486e8cded0fc0d581e9a1a42dc69550"
+account_sid = ""
+auth_token = ""
 
 weather_params = {
     "lat": 19.242439,
     "lon": 73.120193,
-    "appid": "8e2d292b2207458260b065fafeed7741",
+    "appid": "",
     "cnt": 4,
 }
 
