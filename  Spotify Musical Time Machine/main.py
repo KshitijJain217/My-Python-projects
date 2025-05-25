@@ -4,8 +4,8 @@ from spotipy.oauth2 import SpotifyOAuth
 import spotipy
 
 sp = spotipy.Spotify(auth_manager=SpotifyOAuth(
-    client_id='15cf1080795141e0af64c96eb7f91939',
-    client_secret='983f6f6263cb4418898982cecff21cac',
+    client_id='    ',
+    client_secret='  ',
     redirect_uri='https://example.com/callback',    #'http://localhost:8888/callback',
     scope='playlist-modify-public'
 ))
