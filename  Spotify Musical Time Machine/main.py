@@ -23,9 +23,9 @@ song_names = [song.getText().strip() for song in song_names_spans]
 
 # user_id = sp.current_user()["id"]
 user_id = sp.me()['id']
+print(f"User ID: {user_id}")
 
-
-playlist_name = 'f{date} Billboard 100'
+playlist_name = f'{date} Billboard 100'
 playlist = sp.user_playlist_create(user=user_id, name=playlist_name, public=True)
 playlist_id = playlist['id']
 
@@ -40,7 +40,7 @@ for song in song_names:
     else:
         print(f"Not found: {song}")
 
-# Step 6: Add tracks to the playlist
+
 if track_uris:
     sp.playlist_add_items(playlist_id, track_uris)
     print(f"\nPlaylist '{playlist_name}' created and populated!")
