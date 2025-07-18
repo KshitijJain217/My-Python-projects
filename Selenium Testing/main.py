@@ -22,18 +22,26 @@ driver.get("https://www.python.org/")
 # logo_link = driver.find_element(By.XPATH, value='//*[@id="container"]/li[4]/ul/li[8]/a')
 # print(logo_link)
 
-upcoming_events = {}
 
 event_dates = driver.find_elements(By.CSS_SELECTOR, value='.event-widget time')
 event_names = driver.find_elements(By.CSS_SELECTOR, value=".event-widget li a")
 
-for n in range(len(event_dates)):
-    # upcoming_events[event_dates[n].text] = event_names[n].text
-    upcoming_events[n]= {
+# upcoming_events = {}
+# for n in range(len(event_dates)):
+#     # upcoming_events[event_dates[n].text] = event_names[n].text
+#     upcoming_events[n]= {
+#         "time": event_dates[n].text,
+#         "name": event_names[n].text
+#     }
+
+# Dictionary comprehension to create a dictionary of upcoming events
+upcoming_events = {
+    n: {
         "time": event_dates[n].text,
         "name": event_names[n].text
     }
-
+    for n in range(len(event_dates))
+}
 print(upcoming_events)
 
 # driver.close()  # This will close the browser window
