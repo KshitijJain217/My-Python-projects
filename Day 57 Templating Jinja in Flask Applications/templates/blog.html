@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My blog Posts</title>
+</head>
+<body>
+    {% for post in posts: %}
+        {% if post["id"] == 2: %}
+        <h1>{{post["title"]}}</h1>
+        <h4>{{post["subtitle"]}}</h4>
+        <p>{{post["body"]}}</p>
+        {% endif %}
+    {% endfor %}
+</body>
+</html>

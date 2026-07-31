@@ -13,6 +13,7 @@
     {# {{ }} is a jinja template used to run Python code inside HTML #}
     <p>{{5*9}}</p>
     <p>this is your lucky number = {{num}} </p>
+    <a href="{{ url_for('get_blog', num=2) }}"> Go To Blog </a>
     <footer><p>This is website is still running on {{current_year}}</p></footer>
 </body>
 </html>
