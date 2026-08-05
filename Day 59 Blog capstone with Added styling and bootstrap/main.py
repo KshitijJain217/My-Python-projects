@@ -1,4 +1,5 @@
 from flask import Flask, render_template, request
+# DETAILS OF SMTPLIB ON DAY 32
 import smtplib
 import requests
 # made under DAY 60
