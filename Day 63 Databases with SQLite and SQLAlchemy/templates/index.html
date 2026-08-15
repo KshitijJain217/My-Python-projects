@@ -6,14 +6,17 @@
   </head>
   <body>
     <h1>My Library</h1>
-<!--    |length in jinja works the same as python len()-->
+<!--    "|length" in jinja works the same as python len()-->
     {% if all_books|length == 0 %}
       <p>There are no books in your library</p>
     {% endif %}
 
     <ul>
       {% for book in all_books %}
-      <li>{{book.title}} - {{book.author}} - {{book.rating}}/10</li>
+      <li>
+        {{book.title}} - {{book.author}} - {{book.rating}}/10
+        <a href="{{ url_for('edit', id=book.id) }}"> Edit Rating </a>
+      </li>
       {% endfor %}
     </ul>
 
