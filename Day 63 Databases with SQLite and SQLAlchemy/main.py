@@ -61,17 +61,16 @@ def add():
 def edit():
     if request.method == "POST":
         # UPDATE RECORD
-        book_id = request.form.get("book_id")
+        book_id = request.form["id"]
         book_to_update = db.get_or_404(Book, book_id)
         book_to_update.title = request.form["rating"]
         db.session.commit()
         return redirect(url_for('home'))
     book_id = request.args.get("id")
     book_selected = db.get_or_404(Book, book_id)
-    return render_template("edit.html", book=book_selected)
+    return render_template("edit_rating.html", book=book_selected)
 
 
 if __name__ == "__main__":
     app.run(debug=True)
 
-    
