@@ -1,0 +1,6 @@
+$kind: http-request
+name: search
+description: ""
+url: http://127.0.0.1:7050/search
+method: GET
+order: 3776447314046131

@@ -1,0 +1,6 @@
+$kind: http-request
+name: delete
+description: ""
+url: http://127.0.0.1:7050/delete/<int>
+method: DELETE
+order: 4391612833741420

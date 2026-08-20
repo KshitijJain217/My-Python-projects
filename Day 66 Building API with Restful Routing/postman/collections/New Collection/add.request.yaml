@@ -1,0 +1,19 @@
+$kind: http-request
+name: add
+description: ""
+url: http://127.0.0.1:7050/add
+method: POST
+body:
+  type: urlencoded
+  content:
+    name: satrboy
+    map_url: map
+    img_url: " img_url"
+    location: nice
+    seats: seats
+    has_toilet: "true"
+    has_wifi: "true"
+    has_sockets: "true"
+    can_take_calls: "true"
+    coffee_price: "100"
+order: 4263118371995973

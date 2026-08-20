@@ -1,0 +1,9 @@
+$kind: http-request
+name: update-price
+description: ""
+url: http://127.0.0.1:7050/update-price/<int>
+method: PATCH
+body:
+  type: json
+  content: ""
+order: 4389001024989657
