@@ -8,9 +8,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="16c5debd-77d0-4622-8ff1-23d1b31f33ff" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../Day 66 Building API with Restful Routing/.idea/Day 66 Building API with Restful Routing.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../Day 66 Building API with Restful Routing/.idea/Day 66 Building API with Restful Routing.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Day 66 Building API with Restful Routing/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Day 66 Building API with Restful Routing/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Day 66 Building API with Restful Routing/instance/cafes.db" beforeDir="false" afterPath="$PROJECT_DIR$/../Day 66 Building API with Restful Routing/instance/cafes.db" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Day 67 Blog Restful Routing/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Day 67 Blog Restful Routing/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Day 67 Blog Restful Routing/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Day 67 Blog Restful Routing/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Day 67 Blog Restful Routing/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Day 66 Building API with Restful Routing/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Day 66 Building API with Restful Routing/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -124,6 +126,7 @@
       <updated>1787219890979</updated>
       <workItem from="1787219892002" duration="12965000" />
       <workItem from="1787253692935" duration="2063000" />
+      <workItem from="1787317614252" duration="99000" />
     </task>
     <servers />
   </component>

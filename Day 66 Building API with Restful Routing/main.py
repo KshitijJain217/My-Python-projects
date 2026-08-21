@@ -4,7 +4,8 @@ from sqlalchemy.orm import DeclarativeBase, Mapped, mapped_column
 from sqlalchemy import Integer, String, Boolean
 import random
 app = Flask(__name__)
- # use POSTMAN for testing the API endpoints and adding data if needed
+# use POSTMAN for testing the API endpoints and adding data if needed
+
 
 # CREATE DB
 class Base(DeclarativeBase):
