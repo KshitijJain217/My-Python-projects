@@ -1,0 +1,12 @@
+# created by virtualenv automatically
+# Virtual Environment
+.venv/
+venv/
+ENV/
+
+# PyCharm IDE settings
+.idea/
+
+# Python bytecode and cache
+__pycache__/
+*.pyc
