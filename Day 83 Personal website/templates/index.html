@@ -1,0 +1,180 @@
+<!DOCTYPE HTML>
+<!--
+	Strata by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html xmlns="http://www.w3.org/1999/html">
+	<head>
+		<title>Mik</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="../static/assets/css/main.css" />
+	</head>
+	<body class="is-preload">
+
+		<!-- Header -->
+			<header id="header">
+				<div class="inner">
+					<a href="#" class="image avatar"><img src="../static/images/profilepic.png" alt="" /></a>
+					<h1>
+						<strong>Hi, I am Mik</strong><br>
+						I like building things<br> on the web for people
+					</h1>
+				</div>
+				<ul>
+					<li><a href="#one">About Me</a></li>
+					<li><a href="#two">Portfolio</a></li>
+					<li><a href="#three">Contact</a></li>
+				</ul>
+			</header>
+
+		<!-- Main -->
+			<div id="main">
+
+				<!-- One -->
+					<section id="one">
+						<header class="major">
+							<h2>Hello, I'm a Python developer!</h2>
+						</header>
+						<p>
+							I have experience in Python, Flask, Django, HTML, CSS, & Bootstrap.<br>
+							I enjoy turning ideas into interactive and visually appealing websites.<br>
+							I thrive on challenges, love building things, and am excited to help you bring your
+							web projects to life! <br>
+							Let's collaborate and create something amazing together!
+						</p>
+						<ul class="actions">
+							<li><a href="#three" class="button">Contact Me</a></li>
+						</ul>
+					</section>
+
+				<!-- Two -->
+					<section id="two">
+						<h2>Recent Work</h2>
+						<div class="row">
+							<article class="col-6 col-12-xsmall work-item">
+								<a href="../static/images/mindware.PNG" class="image fit thumb">
+									<img src="../static/images/mindware.PNG" alt="" />
+								</a>
+								<h3>MindWare Tech</h3>
+								<a href="https://mindwaretech.onrender.com/">
+									<h5>Live Site</h5>
+								</a>
+								<p><strong>Python, Flask, CSS, HTML, Bootstrap</strong></p>
+								<p>
+									Developed the MindWare Tech website using Flask, HTML, and Bootstrap, prioritizing accessibility,
+									best practices, and SEO for both mobile and desktop users.
+									Used smtplib for email notifications and designed the interface to achieve a
+									modern and user-friendly interface.
+								</p>
+							</article>
+							<article class="col-6 col-12-xsmall work-item">
+								<a href="../static/images/coffee_shop.PNG" class="image fit thumb">
+									<img src="../static/images/coffee_shop.PNG" alt="" />
+								</a>
+								<h3>BlackRiver Coffee</h3>
+								<a href="https://github.com/Mikerniker/BlackRiver_Coffee_Shop">
+									<h5>Github</h5>
+								</a>
+								<p><strong>Python, Django, HTML, CSS, Bootstrap</strong></p>
+								<p>
+									Developed a multi-page coffee shop website using Django, Python, HTML, CSS, and Bootstrap.
+									Utilized object-oriented programming principles to create reusable and modular code and
+									created a landing page that showcased the shop's product offerings.
+								</p>
+							</article>
+							<article class="col-6 col-12-xsmall work-item">
+								<a href="../static/images/vacation_count1.PNG" class="image fit thumb">
+									<img src="../static/images/vacation_count1.PNG" alt="" />
+								</a>
+								<h3>Vacation Countdown</h3>
+								<a href="http://mikster.pythonanywhere.com/">
+									<h5>Live Site</h5>
+								</a>
+								<p><strong>Python, Flask, HTML, CSS, Bootstrap</strong></p>
+								<p>
+									The Vacation Countdown App was built with Flask and functions to
+									count down your next vacation.
+								</p>
+								<p>
+
+								</p>
+							</article>
+						</div>
+					</section>
+
+				<!-- Three -->
+					<section id="three">
+						<h2>Get In Touch</h2>
+						{% with messages = get_flashed_messages() %}
+						{% if messages %}
+						{% for message in messages %}
+						<p>{{ message }}</p>
+						{% endfor %}
+						{% elif not messages %}
+						<p>
+							Feel free to fill out the form below, and I will get back to you as soon as possible!
+						</p>
+						{% endif %}
+						{% endwith %}
+
+						<div class="row">
+							<div class="col-8 col-12-small">
+								<form method="post" action="{{ url_for('home') }}">
+									<div class="row gtr-uniform gtr-50">
+										<div class="col-6 col-12-xsmall"><input type="text" name="name" id="name" placeholder="Name" /></div>
+										<div class="col-6 col-12-xsmall"><input type="email" name="email" id="email" placeholder="Email" /></div>
+										<div class="col-12"><textarea name="message" id="message" placeholder="Message" rows="4"></textarea></div>
+									</div>
+									<ul class="actions" style="padding-top: 20px;">
+										<li><input type="submit" value="Send Message" /></li>
+									</ul>
+								</form>
+							</div>
+							<div class="col-4 col-12-small">
+								<ul class="labeled-icons">
+									<li>
+										<h3 class="icon solid fa-home"><span class="label">Address</span></h3>
+										At a City in the<br />
+										Philippines
+									</li>
+									<li>
+										<h3 class="icon solid fa-mobile-alt"><span class="label">Phone</span></h3>
+										000-000-0000
+									</li>
+									<li>
+										<h3 class="icon solid fa-envelope"><span class="label">Email</span></h3>
+										<a href="#">mik@notmyemail.com</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</section>
+				</div>
+
+		<!-- Footer -->
+			<footer id="footer">
+				<div class="inner">
+					<ul class="icons">
+						<li><a href="#" class="icon brands fa-github"><span class="label">Github</span></a></li>
+						<li><a href="#" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
+						<li><a href="#" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+					</ul>
+					<ul class="copyright">
+						<li>&copy;Mik</li>
+						<li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+					</ul>
+				</div>
+			</footer>
+
+		<!-- Scripts -->
+			<script src="../static/assets/js/jquery.min.js"></script>
+			<script src="../static/assets/js/jquery.poptrox.min.js"></script>
+			<script src="../static/assets/js/browser.min.js"></script>
+			<script src="../static/assets/js/breakpoints.min.js"></script>
+			<script src="../static/assets/js/util.js"></script>
+			<script src="../static/assets/js/main.js"></script>
+
+	</body>
+</html>
