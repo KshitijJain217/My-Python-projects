@@ -1,0 +1,16 @@
+
+# Ignore Python virtual environment
+.venv/
+
+# Byte-compiled / cache files
+__pycache__/
+*.py[cod]
+
+# Distribution / packaging
+build/
+dist/
+*.egg-info/
+
+# Editor directories
+.vscode/
+.idea/
